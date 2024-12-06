@@ -25,9 +25,11 @@ multiple modes affect the energy distribution of the system.
 
 • To qualitatively capture the evolution of velocity projected onto various Galerkin modes and how they
 respond, i.e, grow or decay by varying certain parameters.
+
 • To obtain the hysteresis through a bifurcation plot of the RMS velocity and Heater power value by
 increasing and subsequently decreasing the K value and to observe the Hopf and Fold Bifurcations in the
 plot.
+
 Check the file *Assignment_3.py*.
 
 References:
