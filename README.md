@@ -19,8 +19,10 @@ Assignment 3:
 The primary objectives were:
 To qualitatively capture the evolution of non-dimensional acoustic velocity with time and its dependence
 on parameters like Heater power, K, time lag, τ etc. How damping affects the fluctuations is also studied.
+
 • To understand how the energy of the system respond to increasing K and how projecting the velocity onto
 multiple modes affect the energy distribution of the system.
+
 • To qualitatively capture the evolution of velocity projected onto various Galerkin modes and how they
 respond, i.e, grow or decay by varying certain parameters.
 • To obtain the hysteresis through a bifurcation plot of the RMS velocity and Heater power value by
