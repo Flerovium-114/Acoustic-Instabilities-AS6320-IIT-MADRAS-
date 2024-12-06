@@ -35,11 +35,9 @@ Check the file *Assignment_3.py*.
 References:
 1) *Kosuhik Balasubramanian and R. I. Sujith*, **Thermoacoustic instability in a Rijke tube: Non-normality
 and nonlinearity**, *Physics of Fluids 2.4 (2008)*.
-2) *Priya Subramanian and Pankaj Wahi Sathesh Mariappan R. I. Sujith*, **Bifurcation analysis of thermoacous-
-tic instability in a horizontal Rijke tube**,  *International journal of spray and combustion dynamics 2.4
+2) *Priya Subramanian and Pankaj Wahi Sathesh Mariappan R. I. Sujith*, **Bifurcation analysis of thermoacoustic instability in a horizontal Rijke tube**,  *International journal of spray and combustion dynamics 2.4
 (2010)*.
-3) *Xiaochuan Yang, Ali Turan, and Shenghui Lei*, **Thermoacoustic Instability in a Rijke Tube with a Dis-
-tributed Heat Source**, *Journal Of Thermodynamics (2015)*.
+3) *Xiaochuan Yang, Ali Turan, and Shenghui Lei*, **Thermoacoustic Instability in a Rijke Tube with a Distributed Heat Source**, *Journal Of Thermodynamics (2015)*.
 
 
 
