@@ -1,7 +1,9 @@
 # Acoustic-Instabilities-AS6320-IIT-MADRAS-
+
+## Introduction
 Part of assignments for the course **AS6320 - Acoustic Instabilities in Aerospace Propulsion**, *guide:* ***Prof. R.I. Sujith***
 
-Assignment 2:
+## Assignment 2:
 The objective of this assignment is to analyse the behaviour of one-dimensional acoustic quiescent flow
 fields in ducts with a mean temperature gradient. The wave equation for such a case is derived and is
 solved using the Runge-Kutta 4th order method. By transforming the derived wave equation to the mean
@@ -12,10 +14,10 @@ boundary conditions. The variation of acoustic pressure and velocity amplitudes,
 anti-nodes of acoustic pressure and acoustic velocity and so on are plotted. The numerical and analytical
 results are then compared. Check the file *Assignment_2.py*.
 
-References:
+### References:
 1) **AN EXACT SOLUTION FOR ONE-DIMENSIONAL ACOUSTIC FIELDS IN DUCTS WITH AN AXIAL TEMPERATURE GRADIENT**, *R.I. SUJITH, G.A. WALDHERR AND B.T. ZINN*, *Department of Aerospace Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, USA*.
 
-Assignment 3:
+## Assignment 3:
 The primary objectives were:
 To qualitatively capture the evolution of non-dimensional acoustic velocity with time and its dependence
 on parameters like Heater power, K, time lag, τ etc. How damping affects the fluctuations is also studied.
@@ -32,7 +34,7 @@ plot.
 
 Check the file *Assignment_3.py*.
 
-References:
+### References:
 1) *Kosuhik Balasubramanian and R. I. Sujith*, **Thermoacoustic instability in a Rijke tube: Non-normality
 and nonlinearity**, *Physics of Fluids 2.4 (2008)*.
 2) *Priya Subramanian and Pankaj Wahi Sathesh Mariappan R. I. Sujith*, **Bifurcation analysis of thermoacoustic instability in a horizontal Rijke tube**,  *International journal of spray and combustion dynamics 2.4
