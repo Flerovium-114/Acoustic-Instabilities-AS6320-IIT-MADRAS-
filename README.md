@@ -14,6 +14,11 @@ boundary conditions. The variation of acoustic pressure and velocity amplitudes,
 anti-nodes of acoustic pressure and acoustic velocity and so on are plotted. The numerical and analytical
 results are then compared. Check the file *Assignment_2.py*.
 
+The wave equation derived from the linearised continuity, momentum and energy equations is:
+```math
+    \frac{\partial^{2}p^{'}}{\partial x^{2}} + \frac{1}{\overline{T}}\frac{\partial \overline{T}}{\partial x}\frac{\partial p^{'}}{\partial x} - \frac{1}{\gamma R\overline{T}}\frac{\partial^{2}p^{'}}{\partial t^{2}} = 0
+```
+
 ### References:
 1) **AN EXACT SOLUTION FOR ONE-DIMENSIONAL ACOUSTIC FIELDS IN DUCTS WITH AN AXIAL TEMPERATURE GRADIENT**, *R.I. SUJITH, G.A. WALDHERR AND B.T. ZINN*, *Department of Aerospace Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, USA*.
 
