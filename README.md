@@ -12,7 +12,7 @@ equation. The solution is obtained by considering a linear temperature profile w
 The solution is used to obtain the relationship of sound propagation in a quarter wave tube with specified
 boundary conditions. The variation of acoustic pressure and velocity amplitudes, the location of nodes and
 anti-nodes of acoustic pressure and acoustic velocity and so on are plotted. The numerical and analytical
-results are then compared. Check the file *Assignment_2.py*.
+results are then compared. 
 
 The wave equation derived from the linearised continuity, momentum and energy equations is:
 ```math
@@ -57,7 +57,7 @@ Now we can solve these using RK-4 integration method.
 1) **AN EXACT SOLUTION FOR ONE-DIMENSIONAL ACOUSTIC FIELDS IN DUCTS WITH AN AXIAL TEMPERATURE GRADIENT**, *R.I. SUJITH, G.A. WALDHERR AND B.T. ZINN*, *Department of Aerospace Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, USA*.
 
 ## Assignment 3:
-The primary objectives were:
+### Objectives
 To qualitatively capture the evolution of non-dimensional acoustic velocity with time and its dependence
 on parameters like Heater power, K, time lag, τ etc. How damping affects the fluctuations is also studied.
 
@@ -71,7 +71,33 @@ respond, i.e, grow or decay by varying certain parameters.
 increasing and subsequently decreasing the K value and to observe the Hopf and Fold Bifurcations in the
 plot.
 
-Check the file *Assignment_3.py*.
+### Governing equations
+The same governing equations are used with a change in the energy equation.
+A modified form of King's law is used to model the heat release rate. The empirical model suggested by Heckl is used where using a factor of $$\frac{1}{3}$$ for the $$u_{0}$$ seemed to work.
+```math
+\dot{\tilde{Q}}' = \frac{2L_{w}(T_{w} - \overline{T})}{S\sqrt{3}}\sqrt{\pi \lambda C_{v}\overline{\rho}\frac{d_{w}}{2}}\left[\sqrt{\left |\frac{u_{0}}{3} + \tilde{u}_{f}'(t - \tau)\right |} - \sqrt{\frac{u_{0}}{3}}\right]\delta_{D}(\tilde{x} - \tilde{x}_{f})
+```
+where, $$\delta_{D}$$ is the dirac delta function and we can use the following property,
+```math
+    \delta_{D}(\tilde{x} - \tilde{x}_{f}) = \delta_{D}(L_{a}(x - x_{f})) = \frac{1}{L_{a}}\delta_{D}(x - x_{f})
+```
+along with $$\tilde{u_{f}} = u_{0}u_{f}'$$.
+After adding a damping term, $$\zeta p'$$ and using equation we can rewrite equation as,  
+```math
+    \frac{\partial{p'}}{\partial{t}} + \gamma M \frac{\partial{u'}}{\partial{x}} + \zeta p' = (\gamma - 1)\frac{2L_{w}(T_{w} - \overline{T})}{S\sqrt{3}c_{0}\overline{p}}\sqrt{\pi \lambda C_{v}\overline{\rho}\frac{d_{w}}{2}u_{0}}\left[\sqrt{\left |\frac{1}{3} + u_{f}'(t - \tau)\right |} - \sqrt{\frac{1}{3}}\right]\delta_{D}(x - x_{f})
+```
+We can define a constant,
+```math
+    K' = (\gamma - 1)\frac{2L_{w}(T_{w} - \overline{T})}{S\sqrt{3}c_{0}\overline{p}}\sqrt{\pi \lambda C_{v}\overline{\rho}\frac{d_{w}}{2}u_{0}}
+```
+and rewrite equation as, 
+```math
+    \frac{\partial{p'}}{\partial{t}} + \gamma M \frac{\partial{u'}}{\partial{x}} + \zeta p' = K'\left[\sqrt{\left |\frac{1}{3} + u_{f}'(t - \tau)\right |} - \sqrt{\frac{1}{3}}\right]\delta_{D}(x - x_{f}) 
+```
+$L_{w}$ is the equivalent length of the wire, $$\lambda$$  is the heat conductivity of air, $$C_{v}$$ is the specific heat of air at constant volume, $$\tau$$ is the time lag, $$\rho$$ is the mean density of air, $$d_{w}$$ is the diameter of the wire, $$T_{w} - \overline{T}$$ is the
+temperature difference, and $$S$$ is the cross-sectional area of
+the duct. $$L_{w} = 2.2 m$$, $$d_{w} = 0.0005m$$, $$S = 1.8 \times 10^{-3} m^{2}$, $L_{a} = 1 m$$, $$u_{0} = 0.5 m/s$$, $$\lambda = 0.0328 W/(m.K)$$, $$\rho = 1.205 Kg/m^{3}$$ as is the case for a typical laboratory Rijke tube.
+
 
 ### References:
 1) *Kosuhik Balasubramanian and R. I. Sujith*, **Thermoacoustic instability in a Rijke tube: Non-normality
