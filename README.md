@@ -49,7 +49,7 @@ for integer values of $$n$$.
 - $$c$$ is the speed of sound.
 - $$L$$ is the length of the duct.
 -  $$\omega = 2\pi f$$.
-- $$c = \sqrt{\gamma RT}
+- $$c = \sqrt{\gamma RT}$$.
 Now we can solve these using RK-4 integration method.
 
 
