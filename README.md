@@ -82,7 +82,7 @@ where, $$\delta_{D}$$ is the dirac delta function and we can use the following p
     \delta_{D}(\tilde{x} - \tilde{x}_{f}) = \delta_{D}(L_{a}(x - x_{f})) = \frac{1}{L_{a}}\delta_{D}(x - x_{f})
 ```
 along with $$\tilde{u_{f}} = u_{0}u_{f}'$$.
-After adding a damping term, $$\zeta p'$$ and using equation we can rewrite equation as,  
+After adding a damping term, $$\zeta p'$$, we can rewrite equation as,  
 ```math
     \frac{\partial{p'}}{\partial{t}} + \gamma M \frac{\partial{u'}}{\partial{x}} + \zeta p' = (\gamma - 1)\frac{2L_{w}(T_{w} - \overline{T})}{S\sqrt{3}c_{0}\overline{p}}\sqrt{\pi \lambda C_{v}\overline{\rho}\frac{d_{w}}{2}u_{0}}\left[\sqrt{\left |\frac{1}{3} + u_{f}'(t - \tau)\right |} - \sqrt{\frac{1}{3}}\right]\delta_{D}(x - x_{f})
 ```
@@ -90,7 +90,7 @@ We can define a constant,
 ```math
     K' = (\gamma - 1)\frac{2L_{w}(T_{w} - \overline{T})}{S\sqrt{3}c_{0}\overline{p}}\sqrt{\pi \lambda C_{v}\overline{\rho}\frac{d_{w}}{2}u_{0}}
 ```
-and rewrite equation as, 
+and the previous equation as, 
 ```math
     \frac{\partial{p'}}{\partial{t}} + \gamma M \frac{\partial{u'}}{\partial{x}} + \zeta p' = K'\left[\sqrt{\left |\frac{1}{3} + u_{f}'(t - \tau)\right |} - \sqrt{\frac{1}{3}}\right]\delta_{D}(x - x_{f}) 
 ```
