@@ -32,12 +32,9 @@ The wave equation can be written as:
 ```
 We can decouple the second order wave equation into two first order ODEs as follows:
 ```math
-\begin{equation}
-    \frac{d\hat{p}}{dx} = z \label{eq:4.4}
-\end{equation}
-\begin{equation}    
-    \frac{dz}{dx} = - \frac{1}{\overline{T}}\frac{d\overline{T}}{dx}z - \frac{\omega^{2}}{\gamma R\overline{T}}\hat{p} \label{eq:4.5}
-\end{equation}
+
+    \frac{d\hat{p}}{dx} = z 
+    \frac{dz}{dx} = - \frac{1}{\overline{T}}\frac{d\overline{T}}{dx}z - \frac{\omega^{2}}{\gamma R\overline{T}}\hat{p} 
 ```
 Consider a linear variation of temperature:
 ```math
