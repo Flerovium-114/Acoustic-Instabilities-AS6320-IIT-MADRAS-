@@ -19,6 +19,41 @@ The wave equation derived from the linearised continuity, momentum and energy eq
     \frac{\partial^{2}p^{'}}{\partial x^{2}} + \frac{1}{\overline{T}}\frac{\partial \overline{T}}{\partial x}\frac{\partial p^{'}}{\partial x} - \frac{1}{\gamma R\overline{T}}\frac{\partial^{2}p^{'}}{\partial t^{2}} = 0
 ```
 
+Now introducing perturbations of the form:
+```math
+p^{'}(x,t) = \hat{p}(x)e^{i\omega t}
+```
+where $$\omega$$ is the complex frequency of the perturbations.
+The wave equation can be written as:
+
+```math
+\frac{\partial^{2}\hat{p}}{\partial x^{2}} + \frac{1}{\overline{T}}\frac{\partial \overline{T}}{\partial x}\frac{\partial 
+ \hat{p}}{\partial x} + \frac{\omega ^{2}\hat{p}}{\gamma R\overline{T}} = 0
+```
+We can decouple the second order wave equation into two first order ODEs as follows:
+```math
+    \frac{d\hat{p}}{dx} = z \label{eq:4.4}
+\end{equation}
+\begin{equation}    
+    \frac{dz}{dx} = - \frac{1}{\overline{T}}\frac{d\overline{T}}{dx}z - \frac{\omega^{2}}{\gamma R\overline{T}}\hat{p} \label{eq:4.5}
+\end{equation}
+```
+Consider a linear variation of temperature:
+```math
+ T = T_{0} + mx
+```
+Since the duct is open at one end and closed at the other end, the frequency of oscillations will follow:
+```math
+f = \frac{nc}{4L}
+```
+for integer values of $$n$$.
+- $$n$$ determines the mode of oscillation.
+- $$c$$ is the speed of sound.
+- $$L$$ is the length of the duct.
+-  $$\omega = 2\pi f$$.
+- $$c = \sqrt{\gamma RT}
+Now we can solve these using RK-4 integration method.
+
 
 ### References:
 1) **AN EXACT SOLUTION FOR ONE-DIMENSIONAL ACOUSTIC FIELDS IN DUCTS WITH AN AXIAL TEMPERATURE GRADIENT**, *R.I. SUJITH, G.A. WALDHERR AND B.T. ZINN*, *Department of Aerospace Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, USA*.
