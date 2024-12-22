@@ -32,6 +32,7 @@ The wave equation can be written as:
 ```
 We can decouple the second order wave equation into two first order ODEs as follows:
 ```math
+\begin{equation}
     \frac{d\hat{p}}{dx} = z \label{eq:4.4}
 \end{equation}
 \begin{equation}    
