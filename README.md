@@ -98,6 +98,24 @@ $L_{w}$ is the equivalent length of the wire, $$\lambda$$  is the heat conductiv
 temperature difference, and $$S$$ is the cross-sectional area of
 the duct. $$L_{w} = 2.2 m$$, $$d_{w} = 0.0005m$$, $$S = 1.8 \times 10^{-3} m^{2}$, $L_{a} = 1 m$$, $$u_{0} = 0.5 m/s$$, $$\lambda = 0.0328 W/(m.K)$$, $$\rho = 1.205 Kg/m^{3}$$ as is the case for a typical laboratory Rijke tube.
 
+### Galerkin Technique
+We need to reduce the system of PDEs that we got into ODEs. The Galerkin technique is used for this. The pressure field can be written in terms of the duct's natural modes,
+```math
+    p' = \sum^{N}_{j=1}a_{j}(t)sin(j\pi x)
+```
+The Galerkin technique makes use of the fact that any function in a domain can be expressed as a superposition of expansion functions which form a complete basis in that domain.
+A sine function is chosen as the basis function since we are considering a duct open at both ends and we need pressure nodes at both ends.
+We define:
+```math
+   a_j(t) = -\frac{\gamma M}{j\pi}\dot{\eta_{j}}
+```
+where, $$\dot{\eta}_{j} = \frac{d\eta_{j}}{dt}$$.
+Now we can write,
+```math
+    p' = -\sum^{N}_{j=1}\frac{\gamma M}{j\pi}sin(j\pi x)\dot{\eta}_{j} 
+```
+We can find the 
+
 
 ### References:
 1) *Kosuhik Balasubramanian and R. I. Sujith*, **Thermoacoustic instability in a Rijke tube: Non-normality
